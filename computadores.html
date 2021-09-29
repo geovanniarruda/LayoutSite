@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/84bd21d0d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript.js"></script>
+    <title>Computador - Game Mania </title>
+    <link rel="shortcut icon" href="imagem/iconeNav.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <div id="menu-topo">
+            <!--Logo, busca e icone de login/carrinho -->
+            <div id="logo">
+                <a href="index.html">Game Mania</a>
+            </div>
+            <div>
+                <input type="text" placeholder="Pesquise por...">
+            </div>
+            <div>
+                <a href="#"><i class="far fa-user-circle" style="font-size: 40px; margin-right: 50px;"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart" style="font-size: 30px; margin-right:50px"></i></a>
+            </div>
+        </div>
+
+        <!-- Barra navegação-->
+        <nav>
+            <ul id="navegacao">
+                <li style="margin-left: 20px;"><a href="computadores.html"> Computador</a></li>
+                <li><a href="console.html">Console</a></li>
+                <li><a href="celulares.html">Celulares</a></li>
+                <li style="margin-right:50px;"><a href="games.html">Games</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!---------Carrossel -------------->
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div style="display: block;" class="mySlides fade">
+            <div class="numbertext"><b> 1 / 3</b></div>
+            <img src="imagem/gabinete.jpg" style="width:100%; height: 75vh; object-fit: cover;">
+            <a href="#"><div class="text">PC Intel Core i5, 8GB RAM DDR3, HD SSD 240GB - R$1499,00</div></a>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"><b> 2 / 3</b></div>
+            <img src="imagem/monitor.jpg" style="width:100%; height: 75vh; object-fit: cover;">
+            <a href="#"><div class="text">Teclado Gamer RGB Rainbow - R$299,00</div></a>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"><b> 3 / 3</b></div>
+            <img src="imagem/pc.jpg" style="width:100%; height: 75vh; object-fit:cover;">
+            <a href="#"><div class="text">Apple MacBook Air 13.3", 8GB RAM, 256GB SSD - R$7599,00</div></a>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+   
+    <!------------------Mini Baner --------------->
+    <div id="game">
+        <img src="imagem/mini-baner.jpg" style="height: 70px; opacity: 0.8;" class="baner" alt="">
+    </div>
+
+
+
+    <!-- Inicio do Navegue por categoria -->
+    <section>
+        <div>
+            <h1 class="titulos">Categoria em Destaque</h1>
+        </div>
+        <div id="icones">
+            <a href="#"><img class="categoria" src="imagem/desktop.jpg" alt="Desktop"></a>
+            <a href="#"><img class="categoria" src="imagem/hardware.jpg" alt="Peças e Componetes"></a>
+            <a href="#"><img class="categoria" src="imagem/monitor.jpg" alt="Monitor"></a>
+            <a href="#"><img class="categoria" src="imagem/note.jpg" alt="Notebook"></a>
+        </div>
+    </section>
+
+
+    <div id="game">
+        <img src="imagem/mini-baner.jpg" style="height: 70px; opacity: 0.8;" class="baner" alt="">
+    </div>
+
+
+    <!-- Mais vendidos-->
+
+    <section>
+        <div>
+            <h1 class="titulos">Mais Vendidos</h1>
+        </div>
+        <div style="display: flex; justify-content: space-around;">
+            <div class="prod-promo">
+                <a href="#"><img src="imagem/anuncio.jpg" style="align-items: center;" alt="pc"></a>
+                <span><b>Lorem Ipsum</b></span>
+                <span>R$XXX.XX</span>
+            </div>
+            <div class="prod-promo">
+                <a href="#"><img src="imagem/anuncio.jpg" style="align-items: center;" alt="pc"></a>
+                <span><b>Lorem Ipsum</b></span>
+                <span>R$XXX.XX</span>
+            </div>
+            <div class="prod-promo">
+                <a href="#"><img src="imagem/anuncio.jpg" style="align-items: center;" alt="pc"></a>
+                <span><b>Lorem Ipsum</b></span>
+                <span>R$XXX.XX</span>
+            </div>
+        </div>
+        <div style="display: flex; justify-content: space-around;">
+            <div class="prod-promo">
+                <a href="#"><img src="imagem/anuncio.jpg" style="align-items: center;" alt="pc"></a>
+                <span><b>Lorem Ipsum</b></span>
+                <span>R$XXX.XX</span>
+            </div>
+            <div class="prod-promo">
+                <a href="#"><img src="imagem/anuncio.jpg" style="align-items: center;" alt="pc  "></a>
+                <span><b>Lorem Ipsum</b></span>
+                <span>R$XXX.XX</span>
+            </div>
+            <div class="prod-promo">
+                <a href="#"><img src="imagem/anuncio.jpg" style="align-items: center;" alt="pc"></a>
+                <span><b>Lorem Ipsum</b></span>
+                <span>R$XXX.XX</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Inicio footer -->
+    <footer>
+        <div id="rodape">
+            <div style="margin-top: 70px;">
+                <span>Email:gamemania@email.com</span><br>
+                <span>Endereço:Rua 9 de Julho, 150</span><br>
+                <span>telefone: (11)4500-0000</span>
+            </div>
+            <div style="margin-top: 30px; margin-right: 30px;">
+                <span style="font-size: 80px;">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </span><br>
+                <span>Sigas nas redes sociais</span><br>
+                <span> - Instagram</span><br>
+                <span> - Facebook</span>
+            </div>
+        </div>
+        <span style="margin-left: 40%;">Todos os Direitos Reservados</span>
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>
