@@ -12,11 +12,14 @@
   <link rel="shortcut icon" href="imagem/iconeNav.png" type="image/x-icon">
 </head>
 
-<body>
-  
+<body onresize="exibirNav()">
+      
     <header>
       <div id="menu-topo">
         <!--Logo, busca e icone de login/carrinho -->
+        <a href="#" class="hamburguer" id="hamburguer" > 
+          <i class="fas fa-bars" onclick= "mostrarMenu()"></i>
+        </a> 
         <div id="logo">
           <a href="index.html">Game Mania</a>
         </div>
@@ -24,18 +27,18 @@
         <input type="text" placeholder="Pesquise por...">
         </div>
         <div>
-          <a href="#"><i class="far fa-user-circle" style="font-size: 40px; margin-right: 50px;"></i></a>
-          <a href="#"><i class="fas fa-shopping-cart" style="font-size: 30px; margin-right:50px"></i></a>
+          <a href="#"><i class="far fa-user-circle " style="font-size: 38px; margin-right: 10px;"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart " style="font-size: 30px;"></i></a>
         </div>
       </div>
 
       <!-- Barra navegação-->
       <nav>
         <ul id="navegacao">
-          <li style="margin-left: 20px;"><a href="computadores.html"> Computador</a></li>
+          <li><a href="computadores.html"> Computador</a></li>
           <li><a href="console.html">Console</a></li>
           <li><a href="celulares.html">Celulares</a></li>
-          <li style="margin-right:50px;"><a href="games.html">Games</a></li>
+          <li><a href="games.html">Games</a></li>
         </ul>
       </nav>
     </header>
@@ -51,7 +54,7 @@
       <div>
         <h1 class="titulos">Produtos em Promoção</h1>
       </div>
-      <div style="display: flex; justify-content: space-around;">
+      <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
         <div class="prod-promo">
           <a href="#"><img src="imagem/fone.jpg" style="align-items: center;" alt="Fone de ouvido"></a>
           <span><b>Fone de Ouvido</b></span>
@@ -73,9 +76,9 @@
     <!-- Inicio do Navegue por categoria -->
     <section>
       <div>
-        <h1 class="titulos">Navegue por Categoria</h1>
+        <h1 class="titulos categoria-home">Navegue por Categoria</h1>
       </div>
-      <div id="icones">
+      <div id="icones" class="categoria-home">
         <a href="console.html"><img class="categoria" src="imagem/game.jpg" alt="Video Game"></a>
         <a href="celulares.html"><img class="categoria" src="imagem/cel.jpg" alt="celulares"></a>
         <a href="computadores.html"><img class="categoria" src="imagem/note.jpg" alt="computador"></a>

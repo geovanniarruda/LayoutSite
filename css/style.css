@@ -25,27 +25,23 @@ a{
 
 input{
     border-radius: 5px;
-    width: 600px;
-    height: 40px;
+    width: 50vw;
+    height: 35px;
     text-align: center;
 }
 
-/* #container{
-    width: 1920px;
-    margin: 0 auto;
-} */
 
 /* -----------Inicio do menu/navegação ------------------ */
 
+
 #logo{
     font-size: 30px;
-    margin-left: 20px;
     font-family: 'Nova Flat', cursive;
 }
 
 #menu-topo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100px;
     background-color: black;
     padding: 20px 10px;  
@@ -54,7 +50,7 @@ input{
 #navegacao{
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 60px;
     border: 1px solid white;
     background: black;
@@ -64,8 +60,18 @@ input{
 }
 
 #navegacao a:hover{
-    color: #dbdbdb
+    color: #80bbff
 }
+
+.hamburguer{
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    display: none;
+    font-size: 20px;  
+}
+
 
 /* Fim do Menu e Navegação ------------------- */
 
@@ -141,13 +147,11 @@ input{
 
 /* ---------- Inicio do Navegue por Categoria ---------- */
 
-
-
 .categoria{
     width: 20%;
     height: 300px;
     border-radius: 50%;
-    margin-left: 40px;
+    margin-left: 4%;
     margin-bottom: 70px;
 }
 
@@ -166,6 +170,7 @@ footer{
     font-size: 30px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -196,7 +201,7 @@ footer{
     padding: 16px;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
@@ -254,4 +259,77 @@ footer{
     to {opacity: 1}
   }
 
+
+ 
+
+  @media screen and (max-width: 768px){
+
+    input{
+        width: 40vw;
+    }
+
+    #logo{
+        font-size: 20px;
+    }
+ 
+
+    #navegacao{
+        display: none;  
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        width: 100vw;
+        height: 210px; 
+           
+    }
+
+
+    .hamburguer{
+        display: flex;
+    }
+
+    .prod-promo{
+        width: 80%;
+    
+    }
+
+    .categoria-home{
+        display: none;
+    }
+
+    .categoria{
+        width: 45%;
+        flex-wrap: wrap;
+    }
+
+    .text{
+        font-size: 30px;
+    }
+
+    #rodape{
+        font-size: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer{
+        height: 100%;
+    }    
+  }
+
+  @media screen and (max-width: 440px){
+      #logo{
+          font-size: 17px;
+          margin-left: 15px;
+      }
+
+      .titulos{
+          font-size: 25px;
+      }
+
+      .fa-user-circle, .fa-shopping-cart{
+          margin-left: 20px;
+          margin-bottom: 5px;     
+      }
+  }
 

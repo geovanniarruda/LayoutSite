@@ -28,3 +28,23 @@ function showSlides(n) {
 
 
 
+
+function mostrarMenu() {
+  var x = document.getElementById("navegacao");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+}
+
+function exibirNav() {
+  let largura = window.innerWidth;
+
+  if (largura > 768) {
+    document.getElementById("navegacao").style.display = "flex";
+    
+  }
+
+  
+}
