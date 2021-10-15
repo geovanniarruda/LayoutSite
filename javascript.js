@@ -1,3 +1,13 @@
+// jQuery do menu de busca com alert da pesquisa ao apertar o Enter (numero 13 é a representação numerica da tecla Enter para os navegadores)
+$(document).on('keypress',function(e) {
+  if(e.which == 13) {
+    let input = $("#busca").val();
+      alert(`A busca foi por: ${input}`)
+  }
+});
+
+
+
 // CARROSSEL
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -43,10 +53,10 @@ function exibirNav() {
 }
 
 
-// JavaScript da busca
-function teste() {
+// JavaScript Puro do menu de busca
+/* function teste() {
 let busca = document.getElementById("busca");
 let pesquisado = busca.value;
 
 alert(`A busca foi por: ${pesquisado}`)
-}
+}*/
