@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="jquery-3.6.0.js"></script>
   <script src="https://kit.fontawesome.com/84bd21d0d7.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <script src="javascript.js"></script>
   <title>Home - Game Mania </title>
@@ -18,24 +19,24 @@
     <header>
       <div id="menu-topo">
         <!--Logo, busca e icone de login/carrinho -->
-        <a href="#" class="hamburguer" id="hamburguer" > 
+        <a href="#" class="hamburguer mt-2" id="hamburguer" style="color: white;" > 
           <i class="fas fa-bars" onclick= "mostrarMenu()"></i>
         </a> 
         <div id="logo">
-          <a href="index.html">Game Mania</a>
+          <a class="link-unstyled" style="color: white; text-decoration: none;" href="index.html">Game Mania</a>
         </div>
         <div>
         <input id="busca" type="search" placeholder="Pesquise por..." value="" onsearch="teste()" >
         </div>
         <div>
-          <a href="#"><i class="far fa-user-circle " style="font-size: 38px; margin-right: 10px;"></i></a>
-          <a href="#"><i class="fas fa-shopping-cart " style="font-size: 30px;"></i></a>
+          <a href="#"><i class="far fa-user-circle " style="font-size: 38px; margin-right: 10px; color: white;"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart " style="font-size: 30px; color: white;"></i></a>
         </div>
       </div>
 
       <!-- Barra navegação-->
       <nav>
-        <ul id="navegacao">
+        <ul id="navegacao" class="mb-0">
           <li><a href="computadores.html"> Computador</a></li>
           <li><a href="console.html">Console</a></li>
           <li><a href="celulares.html">Celulares</a></li>
@@ -47,7 +48,7 @@
     <!-- Baner -->
     <div id="game">
       <a href="#"><img src="imagem/baner.jpg" class="baner" alt="xbox one por R$1399,00"></a>
-      <div id="texto-img"><a href="#"><b>Xbox One por Apenas R$1399,00</b></a></div>
+      <div id="texto-img"><a href="#" style="color:white;"><b>Xbox One por Apenas R$1399,00</b></a></div>
     </div>
 
     <!--Inicio dos produtos em promoção-->
@@ -97,8 +98,8 @@
         </div>
         <div style="margin-top: 30px; margin-right: 30px;">
           <span style="font-size: 80px;">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-facebook-square" style="color: white;"></i></a>
+            <a href="#"><i class="fab fa-instagram-square" style="color: white;"></i></a>
           </span><br>
           <span>Sigas nas redes sociais</span><br>
           <span> - Instagram</span><br>
@@ -107,6 +108,8 @@
       </div>
       <span style="margin-left: 40%;">Todos os Direitos Reservados</span>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
