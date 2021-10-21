@@ -130,6 +130,12 @@ input{
     
 }
 
+.prod-promo:hover{
+  
+    height: 502px;
+    box-shadow: 6px 7px 3px #666666;
+}
+
 .prod-promo a img{
     width: 85%;
     height: 60%;
